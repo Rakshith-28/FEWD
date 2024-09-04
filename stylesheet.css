@@ -1,0 +1,56 @@
+body,h1,h2,p{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    line-height:1.6;
+}
+header{
+    background-color: black;
+    color:aliceblue;
+    text-align: center;
+    padding:1rem;
+}
+main{
+    padding:2rem;
+}
+
+.profile{
+    display:flex;
+    align-items:center;
+}
+
+.photo{
+    flex:1;
+    padding:0 2rem;
+}
+
+.photoimg{
+    max-width:100%;
+    height: auto;
+    border-radius:50%;
+    box-shadow: 0 0 10px rgb(253, 246, 205);
+}
+
+.bio{
+    flex:2;
+}
+
+footer{
+    text-align: center;
+    padding:1rem;
+    background-color:black;
+    color:aliceblue;
+    bottom:0;
+    right:0;
+    left:0;
+    position: absolute;
+}
+
+@media screen and (max-width:768px){
+    .profile{
+        flex-direction: column;
+    }
+}
